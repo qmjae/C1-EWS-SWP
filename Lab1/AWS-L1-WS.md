@@ -2,24 +2,26 @@
  
 ## Pre-requisites
 Network Diagram
-![alt text](/assets/nd.png)
+
+![alt text](/Lab1/assets/nd.png)
+
 1. VPC
 
-![alt text](/assets/vpc.png)
+![alt text](/Lab1/assets/vpc.png)
 
 2. Subnets
 
-![alt text](/assets/subnets.png)
+![alt text](/Lab1/assets/subnets.png)
 
 3. Internet (Public) and NAT Gateways (Private)
 
     `IGW`
 
-    ![alt text](/assets/igw.png)
+    ![alt text](/Lab1/assets/igw.png)
 
     `NAT`
 
-    ![alt text](/assets/ngw.png)
+    ![alt text](/Lab1/assets/ngw.png)
 
 ## Requirements
 1. Create two policies - one for Windows and one for Linux
@@ -27,34 +29,34 @@ Network Diagram
     a. Enable all the Agent features on the policy
     
     `Windows`
-    ![Windows](/assets/1a.png)
+    ![Windows](/Lab1/assets/1a.png)
 
     `Linux`
-    ![Linux](/assets/1aa.png)
+    ![Linux](/Lab1/assets/1aa.png)
 
     b. Set the network engine to Tap mode
 
     `Windows`
 
-    ![Windows](/assets/1b.png)
+    ![Windows](/Lab1/assets/1b.png)
 
     `Linux`
 
-    ![Linux](/assets/1bb.png)
+    ![Linux](/Lab1/assets/1bb.png)
 
 2. Install Deep Security Agent (DSA) on the Windows and Linux instances in the public subnet using the deployment script then assign the policy created in Step 1.
     
     `Web Console`
 
-    ![alt text](/assets/dsa.png)
+    ![alt text](/Lab1/assets/dsa.png)
 
     `Windows`
 
-    ![alt text](/assets/dsawin2022.png)
+    ![alt text](/Lab1/assets/dsawin2022.png)
 
     `Linux`
 
-    ![alt text](/assets/dsaubuntu.png)
+    ![alt text](/Lab1/assets/dsaubuntu.png)
 
     **Note:** In Linux, there's a Software Update on *Device Control*, DC is not compatible with this specific OS. Compatible with MAC OS and other...
      
@@ -62,19 +64,19 @@ Network Diagram
 
     `Windows Agent for 64bit`
 
-    ![alt text](/assets/winmsi.png)
+    ![alt text](/Lab1/assets/winmsi.png)
 
     `MSI Installer`
 
-    ![alt text](/assets/winmsiinstlal.png)
+    ![alt text](/Lab1/assets/winmsiinstlal.png)
     
     `MSI Agent Setup`
 
-    ![alt text](/assets/agentsetup.png)
+    ![alt text](/Lab1/assets/agentsetup.png)
     
     `Activation Req`
 
-    ![alt text](/assets/activereq.png)
+    ![alt text](/Lab1/assets/activereq.png)
     
     `Activation CLI`
 
@@ -112,22 +114,22 @@ Network Diagram
     
     `ps aux | grep ds_agent`
 
-    ![alt text](/assets/image.png)
+    ![alt text](/Lab1/assets/image.png)
 
     `lsmod`
 
-    ![alt text](/assets/image-1.png)
+    ![alt text](/Lab1/assets/image-1.png)
 
 5. Create a report to show all computer status monthly. 
 
-    ![alt text](/assets/image-2.png)
-    ![alt text](/assets/image-3.png)
+    ![alt text](/Lab1/assets/image-2.png)
+    ![alt text](/Lab1/assets/image-3.png)
 
     **Note**: Located in Events&Reports -> Generate Reports -> Scheduled Reports -> New
 
 6. Update the schedule for Daily Check for Security Update.
 
-    ![alt text](/assets/image-4.png)
+    ![alt text](/Lab1/assets/image-4.png)
 
     **Note**: Located in Administration -> Scheduled Tasks -> New
 
@@ -135,13 +137,13 @@ Network Diagram
 
     `Win Server 2022`
 
-    ![alt text](/assets/image-5.png)
-    ![alt text](/assets/image-9.png)
+    ![alt text](/Lab1/assets/image-5.png)
+    ![alt text](/Lab1/assets/image-9.png)
     
     `Linux`
 
-    ![alt text](/assets/image-6.png)
-    ![alt text](/assets/image-8.png)
+    ![alt text](/Lab1/assets/image-6.png)
+    ![alt text](/Lab1/assets/image-8.png)
 
     **Note**: Located in Computers -> Double Click a Computer -> Overview -> Actions -> Create a Diagnostic Package
 
